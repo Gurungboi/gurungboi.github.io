@@ -15,11 +15,9 @@
   --muted:#8A7E74;--rule:#D0C8BC;--white:#FDFAF6;--sidebar:200px;
 }
 html{scroll-behavior:auto;}
-body{background:var(--paper);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;cursor:none;overflow-x:hidden;}
+body{background:var(--paper);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;overflow-x:hidden;}
 
-/* CURSOR */
-#cur{width:10px;height:10px;background:var(--red);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999;mix-blend-mode:multiply;}
-#curR{width:36px;height:36px;border:1.5px solid var(--red);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transition:transform 0.38s cubic-bezier(0.23,1,0.32,1),width 0.22s,height 0.22s;}
+
 
 /* SIDEBAR */
 .sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--sidebar);background:var(--ink);display:flex;flex-direction:column;padding:36px 0;z-index:100;overflow:hidden;}
@@ -126,6 +124,41 @@ section{border-bottom:1px solid var(--rule);}
 .sk-tags{display:flex;flex-wrap:wrap;gap:6px;}
 .tag{font-family:'DM Mono',monospace;font-size:0.63rem;padding:3px 10px;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.55);letter-spacing:0.02em;transition:all 0.18s;}
 .tag:hover,.tag.hi{background:var(--red);border-color:var(--red);color:#fff;}
+
+/* ── ARCHITECTURE ── */
+#architecture{background:var(--paper2);}
+#architecture .s-wrap{display:flex;flex-direction:column;gap:48px;}
+.arch-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.arch-intro-text{font-size:1rem;line-height:1.85;color:var(--muted);}
+.arch-intro-text strong{color:var(--ink);font-weight:600;}
+.arch-quote{border-left:4px solid var(--red);padding:20px 0 20px 24px;}
+.arch-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;line-height:1.5;color:var(--ink);}
+.arch-quote cite{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);font-style:normal;letter-spacing:0.06em;display:block;margin-top:10px;}
+.arch-flow{display:flex;align-items:stretch;gap:0;position:relative;}
+.arch-flow::before{content:'';position:absolute;top:50%;left:0;right:0;height:2px;background:linear-gradient(to right,var(--rule),var(--red) 40%,var(--red));z-index:0;}
+.arch-card{flex:1;background:var(--white);border:1px solid var(--rule);padding:32px 26px 28px;position:relative;z-index:1;transition:all 0.32s;overflow:hidden;}
+.arch-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:0;background:var(--red);transition:height 0.32s cubic-bezier(0.16,1,0.3,1);}
+.arch-card:hover::after{height:4px;}
+.arch-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(17,14,11,0.08);}
+.arch-card.arch-current{border-color:var(--red);box-shadow:0 0 0 1px var(--red);}
+.arch-card.arch-current .arch-gen{color:var(--red);}
+.arch-arrow{display:flex;align-items:center;justify-content:center;width:48px;flex-shrink:0;position:relative;z-index:1;}
+.arch-arrow-icon{width:28px;height:28px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.7rem;font-family:'DM Mono',monospace;}
+.arch-gen{font-family:'DM Mono',monospace;font-size:0.55rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.arch-name{font-family:'Playfair Display',serif;font-weight:900;font-size:1.35rem;letter-spacing:-0.03em;line-height:1.1;margin-bottom:6px;}
+.arch-era{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--red);letter-spacing:0.06em;margin-bottom:16px;}
+.arch-desc{font-size:0.88rem;line-height:1.72;color:var(--muted);margin-bottom:18px;}
+.arch-desc strong{color:var(--ink);}
+.arch-details{display:flex;flex-direction:column;gap:6px;}
+.arch-detail{display:flex;gap:8px;align-items:baseline;}
+.arch-detail-dot{width:5px;height:5px;background:var(--red);border-radius:50%;flex-shrink:0;margin-top:5px;}
+.arch-detail-txt{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--ink2);line-height:1.55;}
+.arch-why{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:8px;margin-top:14px;}
+.arch-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.arch-stat{background:var(--white);border:1px solid var(--rule);padding:22px 20px;text-align:center;transition:background 0.25s;}
+.arch-stat:hover{background:var(--paper);}
+.arch-stat-n{font-family:'Playfair Display',serif;font-weight:900;font-size:2rem;color:var(--red);letter-spacing:-0.04em;line-height:1;margin-bottom:6px;}
+.arch-stat-l{font-family:'DM Mono',monospace;font-size:0.58rem;color:var(--muted);letter-spacing:0.06em;}
 
 /* ── AI ── */
 #ai .s-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
@@ -265,6 +298,11 @@ section{border-bottom:1px solid var(--rule);}
   .hero-bl{padding:28px 24px;border-right:none;border-top:1px solid rgba(255,255,255,0.08);}
   .hero-br{display:none;}
   #about .s-wrap,#ai .s-wrap,#contact .s-wrap{grid-template-columns:1fr;}
+  .arch-intro{grid-template-columns:1fr;}
+  .arch-flow{flex-direction:column;gap:0;}
+  .arch-flow::before{display:none;}
+  .arch-arrow{width:100%;height:36px;transform:rotate(90deg);}
+  .arch-bottom{grid-template-columns:1fr;}
   .skills-grid{grid-template-columns:1fr 1fr;}
   .app-cards,#projects .s-wrap,#education .s-wrap{grid-template-columns:1fr;}
   .s-head,.s-wrap,.timeline{padding-left:28px;padding-right:28px;}
@@ -279,8 +317,6 @@ section{border-bottom:1px solid var(--rule);}
 </head>
 <body>
 
-<div id="cur"></div>
-<div id="curR"></div>
 
 <!-- SIDEBAR -->
 <aside class="sidebar">
@@ -292,11 +328,12 @@ section{border-bottom:1px solid var(--rule);}
     <li><button class="nav-btn" data-target="hero"><span class="nb-num">00</span><span class="nb-label">Home</span></button></li>
     <li><button class="nav-btn" data-target="about"><span class="nb-num">01</span><span class="nb-label">About</span></button></li>
     <li><button class="nav-btn" data-target="skills"><span class="nb-num">02</span><span class="nb-label">Skills</span></button></li>
-    <li><button class="nav-btn" data-target="ai"><span class="nb-num">03</span><span class="nb-label">AI</span></button></li>
-    <li><button class="nav-btn" data-target="experience"><span class="nb-num">04</span><span class="nb-label">Experience</span></button></li>
-    <li><button class="nav-btn" data-target="projects"><span class="nb-num">05</span><span class="nb-label">Projects</span></button></li>
-    <li><button class="nav-btn" data-target="education"><span class="nb-num">06</span><span class="nb-label">Education</span></button></li>
-    <li><button class="nav-btn" data-target="contact"><span class="nb-num">07</span><span class="nb-label">Contact</span></button></li>
+    <li><button class="nav-btn" data-target="architecture"><span class="nb-num">03</span><span class="nb-label">Architecture</span></button></li>
+    <li><button class="nav-btn" data-target="ai"><span class="nb-num">04</span><span class="nb-label">AI</span></button></li>
+    <li><button class="nav-btn" data-target="experience"><span class="nb-num">05</span><span class="nb-label">Experience</span></button></li>
+    <li><button class="nav-btn" data-target="projects"><span class="nb-num">06</span><span class="nb-label">Projects</span></button></li>
+    <li><button class="nav-btn" data-target="education"><span class="nb-num">07</span><span class="nb-label">Education</span></button></li>
+    <li><button class="nav-btn" data-target="contact"><span class="nb-num">08</span><span class="nb-label">Contact</span></button></li>
   </ul>
   <div class="sidebar-foot">
     <div class="avail"><span class="avail-dot"></span><span class="avail-txt">Available</span></div>
@@ -430,9 +467,82 @@ section{border-bottom:1px solid var(--rule);}
     </div>
   </section>
 
+  <!-- ARCHITECTURE -->
+  <section id="architecture">
+    <div class="s-head reveal"><span class="s-num">03</span><h2 class="s-title">Architecture</h2></div>
+    <div class="s-wrap">
+      <div class="arch-intro reveal">
+        <div class="arch-intro-text">
+          <p>I've driven iOS through <strong>three full architectural generations</strong> at Prezzee — not as academic exercises, but as direct responses to real scaling pain. Each migration was proposed, designed, documented, and rolled out under my ownership. I wrote the migration guides, ran workshop sessions, and paired through the first features to make each pattern stick across the team.</p>
+        </div>
+        <div class="arch-quote">
+          <p>"Architecture should solve the problems you actually have — not the ones that look good on a whiteboard."</p>
+          <cite>— My approach at every migration decision</cite>
+        </div>
+      </div>
+      <div class="arch-flow reveal">
+        <div class="arch-card">
+          <div class="arch-gen">Generation 01</div>
+          <div class="arch-name">MVC</div>
+          <div class="arch-era">2019 — 2020</div>
+          <div class="arch-desc">The inherited codebase. ViewControllers owning everything — networking, state, navigation, UI. <strong>Worked fine at small scale</strong> but testing was painful and onboarding slow.</div>
+          <div class="arch-details">
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Massive ViewControllers (1000+ lines)</div></div>
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Tight coupling between UI and business logic</div></div>
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Unit testing nearly impossible</div></div>
+          </div>
+          <div class="arch-why">Why move on?</div>
+          <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Codebase growing, team growing — couldn't scale</div></div>
+        </div>
+        <div class="arch-arrow"><div class="arch-arrow-icon">→</div></div>
+        <div class="arch-card">
+          <div class="arch-gen">Generation 02</div>
+          <div class="arch-name">MVVM + Coordinator</div>
+          <div class="arch-era">2021 — 2023</div>
+          <div class="arch-desc">Separated concerns properly. ViewModels handled logic, Coordinators owned navigation. <strong>Testability improved dramatically</strong> and new engineers ramped up faster.</div>
+          <div class="arch-details">
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Combine-powered reactive bindings</div></div>
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Coordinator pattern for decoupled navigation</div></div>
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">ViewModels fully unit-testable</div></div>
+          </div>
+          <div class="arch-why">Why move on?</div>
+          <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">State complexity caused subtle, hard-to-reproduce bugs</div></div>
+        </div>
+        <div class="arch-arrow"><div class="arch-arrow-icon">→</div></div>
+        <div class="arch-card arch-current">
+          <div class="arch-gen">Generation 03 · Current</div>
+          <div class="arch-name">MVI + Coordinator</div>
+          <div class="arch-era">2024 — Present</div>
+          <div class="arch-desc">Unidirectional data flow. Intent → State → Reducer loop makes <strong>side effects predictable</strong>, screen state trivial to test, and onboarding new engineers even faster.</div>
+          <div class="arch-details">
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Single source of truth for screen state</div></div>
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Predictable side-effect handling</div></div>
+            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Easier debugging — state is always reproducible</div></div>
+          </div>
+          <div class="arch-why">Result</div>
+          <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Fewer state-related bugs, faster feature delivery</div></div>
+        </div>
+      </div>
+      <div class="arch-bottom reveal">
+        <div class="arch-stat">
+          <div class="arch-stat-n">3</div>
+          <div class="arch-stat-l">Architecture Generations Led</div>
+        </div>
+        <div class="arch-stat">
+          <div class="arch-stat-n">75%+</div>
+          <div class="arch-stat-l">Test Coverage Achieved</div>
+        </div>
+        <div class="arch-stat">
+          <div class="arch-stat-n">45s</div>
+          <div class="arch-stat-l">Build Time (was 3+ min)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- AI -->
   <section id="ai">
-    <div class="s-head reveal"><span class="s-num">03</span><h2 class="s-title">AI &amp; Learning</h2></div>
+    <div class="s-head reveal"><span class="s-num">04</span><h2 class="s-title">AI &amp; Learning</h2></div>
     <div class="s-wrap">
       <div>
         <div class="badge-row reveal"><span class="badge">Active</span><span class="badge-sub">Integrated into daily engineering workflow</span></div>
@@ -461,7 +571,7 @@ section{border-bottom:1px solid var(--rule);}
 
   <!-- EXPERIENCE -->
   <section id="experience">
-    <div class="s-head reveal"><span class="s-num">04</span><h2 class="s-title">Experience</h2></div>
+    <div class="s-head reveal"><span class="s-num">05</span><h2 class="s-title">Experience</h2></div>
     <div class="timeline">
 
       <!-- PREZZEE -->
@@ -487,14 +597,7 @@ section{border-bottom:1px solid var(--rule);}
               <div class="bl"><span class="bl-d">—</span><span class="bl-t">Coordinated with external card-scheme and banking partners — API contracts, sandbox testing, and Apple's production certification process.</span></div>
             </div>
           </div>
-          <div>
-            <div class="area-head">iOS Architecture — Three Generations</div>
-            <div class="blist">
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Drove iOS codebase through <strong>MVC → MVVM + Coordinator → MVI + Coordinator</strong>. Proposed MVI when state complexity started causing bugs.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">MVI introduced a clear Intent → State → Reducer loop — side effects predictable, screen state easier to test, onboarding new engineers faster.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Wrote migration guides, ran workshop sessions, and paired through the first two features to make the pattern stick across the team.</span></div>
-            </div>
-          </div>
+
           <div>
             <div class="area-head">Platform &amp; Cross-Platform</div>
             <div class="blist">
@@ -573,7 +676,7 @@ section{border-bottom:1px solid var(--rule);}
 
   <!-- PROJECTS -->
   <section id="projects">
-    <div class="s-head reveal"><span class="s-num">05</span><h2 class="s-title">Open Source</h2></div>
+    <div class="s-head reveal"><span class="s-num">06</span><h2 class="s-title">Open Source</h2></div>
     <div class="s-wrap">
       <div class="os-card reveal">
         <a href="https://github.com/sunilgurung" target="_blank" class="os-link">↗</a>
@@ -601,7 +704,7 @@ section{border-bottom:1px solid var(--rule);}
 
   <!-- EDUCATION -->
   <section id="education">
-    <div class="s-head reveal"><span class="s-num">06</span><h2 class="s-title">Education</h2></div>
+    <div class="s-head reveal"><span class="s-num">07</span><h2 class="s-title">Education</h2></div>
     <div class="s-wrap">
       <div class="edu-card reveal">
         <div class="edu-yr">2018 – 2019</div>
@@ -626,7 +729,7 @@ section{border-bottom:1px solid var(--rule);}
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="s-head reveal"><span class="s-num">07</span><h2 class="s-title">Contact</h2></div>
+    <div class="s-head reveal"><span class="s-num">08</span><h2 class="s-title">Contact</h2></div>
     <div class="s-wrap">
       <div>
         <h2 class="contact-h reveal">Open to<br/><em>great</em><br/>work.</h2>
@@ -655,22 +758,6 @@ section{border-bottom:1px solid var(--rule);}
 </main>
 
 <script>
-// CURSOR
-const cur=document.getElementById('cur'),curR=document.getElementById('curR');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cur.style.transform=`translate(${mx-5}px,${my-5}px)`;
-});
-(function loop(){
-  rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;
-  curR.style.transform=`translate(${rx-18}px,${ry-18}px)`;
-  requestAnimationFrame(loop);
-})();
-document.querySelectorAll('a,button,.hc,.os-card,.acard,.stat-row,.clink').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{curR.style.width='52px';curR.style.height='52px';});
-  el.addEventListener('mouseleave',()=>{curR.style.width='36px';curR.style.height='36px';});
-});
 
 // NAV — scroll to section
 function goTo(id){
