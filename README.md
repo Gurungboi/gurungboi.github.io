@@ -21,15 +21,12 @@ I build **mobile applications**, explore **AI-powered tools**, and share my **pr
 
 **Mobile**
 
-* Flutter
 * Kotlin
 * Swift
-* React Native
 
 **Backend / Tools**
 
 * Firebase
-* Node.js
 * REST APIs
 
 **Other**
