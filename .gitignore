@@ -1,0 +1,65 @@
+# OS Files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.desktop
+.Trashes
+._*
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+*.min.css
+*.min.js
+.turbo/
+dist/.vite/
+.vite/
+
+# Package managers (if used)
+node_modules/
+node_modules/.cache/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+coverage/
+coverage-final.json
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# Python
+*.pyc
+
+# Assets (local copies)
+Images/
+images/
+photos/
+photos/
