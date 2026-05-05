@@ -4,454 +4,207 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Sunil Gurung — Senior iOS Engineer</title>
-<script src="meta.js"></script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
+<meta name="description" content="Sunil Gurung — Senior Mobile Engineer shipping iOS, Android, KMP, and Apple Pay at scale."/>
+<meta name="author" content="Sunil Gurung"/>
+<meta name="theme-color" content="#FAF6F1"/>
+<meta property="og:title" content="Sunil Gurung — Senior iOS Engineer"/>
+<meta property="og:description" content="7 years shipping iOS, Android, KMP, and Apple Pay at scale."/>
+<meta property="og:image" content="Images/logo.png"/>
+<link rel="icon" type="image/png" href="Images/logo.png"/>
 </head>
 <body>
 
-
-<!-- SIDEBAR -->
-<aside class="sidebar">
-  <div class="logo">
-    <div class="logo-name">Sunil <em>G.</em></div>
-    <div class="logo-role">iOS · Android · KMP</div>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-brand">Sunil <em>G.</em></span>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <span class="nav-status">● Available</span>
   </div>
-  <ul class="nav-list">
-    <li><button class="nav-btn" data-target="hero"><span class="nb-num">00</span><span class="nb-label">Home</span></button></li>
-    <li><button class="nav-btn" data-target="about"><span class="nb-num">01</span><span class="nb-label">About</span></button></li>
-    <li><button class="nav-btn" data-target="skills"><span class="nb-num">02</span><span class="nb-label">Skills</span></button></li>
-    <li><button class="nav-btn" data-target="architecture"><span class="nb-num">03</span><span class="nb-label">Architecture</span></button></li>
-    <li><button class="nav-btn" data-target="ai"><span class="nb-num">04</span><span class="nb-label">AI</span></button></li>
-    <li><button class="nav-btn" data-target="experience"><span class="nb-num">05</span><span class="nb-label">Experience</span></button></li>
-    <li><button class="nav-btn" data-target="projects"><span class="nb-num">06</span><span class="nb-label">Projects</span></button></li>
-    <li><button class="nav-btn" data-target="education"><span class="nb-num">07</span><span class="nb-label">Education</span></button></li>
-    <li><button class="nav-btn" data-target="contact"><span class="nb-num">08</span><span class="nb-label">Contact</span></button></li>
-  </ul>
-  <div class="sidebar-foot">
-    <div class="avail"><span class="avail-dot"></span><span class="avail-txt">Available</span></div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-kicker">Senior Mobile Engineer</span>
+    <h1 class="hero-title">Sunil<br/>Gurung.</h1>
+    <p class="hero-sub">7 years shipping products used by millions. iOS, Android, Kotlin Multiplatform, Apple Pay — I build mobile experiences people rely on every day.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">View Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="hm-item"><span class="hm-num">7</span><span class="hm-label">Years</span></div>
+      <div class="hm-item"><span class="hm-num">4×</span><span class="hm-label">Promoted</span></div>
+      <div class="hm-item"><span class="hm-num">~60%</span><span class="hm-label">Less Duplicate Code</span></div>
+      <div class="hm-item"><span class="hm-num">45s</span><span class="hm-label">Build Time</span></div>
+    </div>
   </div>
-</aside>
+</section>
 
-<main class="main">
+<!-- WORK -->
+<section class="section alt" id="work">
+  <div class="section-inner">
+    <span class="section-tag">Experience</span>
+    <h2 class="section-title">Prezzee</h2>
+    <div class="work-role">Senior Mobile Engineer · 2019 – Present · Sydney</div>
+    <p class="work-summary">Joined as a two-week iOS intern. Promoted four times. Led Apple Pay integration used by millions, rebuilt cross-platform experiences, and ran the mobile team as Acting Tech Lead.</p>
+    <div class="work-promos">
+      <span class="promo active">Senior · 2024 →</span>
+      <span class="promo">Mid · 2021</span>
+      <span class="promo">Associate · 2019</span>
+      <span class="promo">Intern · 2019</span>
+    </div>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-glow-a"></div>
-    <div class="hero-glow-b"></div>
-    <div class="hero-topbar">
-      <div class="hero-tb-left">
-        <span class="hero-tb-dot"></span>
-        <span>Available for hire</span>
-        <span style="color:rgba(255,255,255,0.12);">·</span>
-        <span>Sydney, NSW, Australia</span>
+    <div class="work-cards">
+      <div class="wc">
+        <span class="wc-icon">📱</span>
+        <div class="wc-title">Apple Pay &amp; Wallet</div>
+        <div class="wc-desc">Led end-to-end Apple Pay integration — millions of users can now add gift cards to Apple Wallet. Banking-grade security: encrypted data, certificate chains, OTP flows, Apple certification.</div>
       </div>
-      <div class="hero-tb-right">Portfolio · 2025</div>
-    </div>
-    <div class="hero-body">
-      <div class="hero-kicker">Senior Mobile Engineer — 7 Years</div>
-      <div class="hero-name">
-        <span class="hn-row"><span>Sunil</span></span>
-        <span class="hn-row"><span>Gurung.</span></span>
+      <div class="wc">
+        <span class="wc-icon">🔗</span>
+        <div class="wc-title">Kotlin Multiplatform</div>
+        <div class="wc-desc">Introduced KMP so iOS and Android users get identical experiences. Cut duplicate code by 60% — fewer inconsistencies, faster delivery for everyone.</div>
       </div>
-    </div>
-    <div class="hero-ticker">
-      <div class="ticker-track">
-        <span class="ticker-item">Swift</span><span class="ticker-item">SwiftUI</span>
-        <span class="ticker-item">Kotlin Multiplatform</span><span class="ticker-item">Jetpack Compose</span>
-        <span class="ticker-item">Apple Pay · PassKit</span><span class="ticker-item">MVI Architecture</span>
-        <span class="ticker-item">GitHub Copilot</span><span class="ticker-item">Claude AI</span>
-        <span class="ticker-item">Bitrise · Fastlane</span><span class="ticker-item">Acting Tech Lead</span>
-        <span class="ticker-item">UIKit · Combine</span><span class="ticker-item">iOS · Android · KMP</span>
-        <span class="ticker-item">SPM Modules</span><span class="ticker-item">XCTest · JUnit</span>
-        <!-- duplicate for seamless loop -->
-        <span class="ticker-item">Swift</span><span class="ticker-item">SwiftUI</span>
-        <span class="ticker-item">Kotlin Multiplatform</span><span class="ticker-item">Jetpack Compose</span>
-        <span class="ticker-item">Apple Pay · PassKit</span><span class="ticker-item">MVI Architecture</span>
-        <span class="ticker-item">GitHub Copilot</span><span class="ticker-item">Claude AI</span>
-        <span class="ticker-item">Bitrise · Fastlane</span><span class="ticker-item">Acting Tech Lead</span>
-        <span class="ticker-item">UIKit · Combine</span><span class="ticker-item">iOS · Android · KMP</span>
-        <span class="ticker-item">SPM Modules</span><span class="ticker-item">XCTest · JUnit</span>
+      <div class="wc">
+        <span class="wc-icon">🏗️</span>
+        <div class="wc-title">Architecture</div>
+        <div class="wc-desc">Three architectural migrations (MVC → MVVM → MVI). Each one directly improved app stability and feature delivery speed for end users.</div>
+      </div>
+      <div class="wc">
+        <span class="wc-icon">👥</span>
+        <div class="wc-title">Tech Lead</div>
+        <div class="wc-desc">Led a team of four. Mentored engineers through design reviews — two promoted. Direct bridge between product goals and what the team built.</div>
       </div>
     </div>
-    <div class="hero-bottom">
-      <div class="hero-bl">
-        <p class="hero-desc">From <strong>intern to Senior Engineer</strong> at Australia's largest gift card platform. iOS, Android, Kotlin Multiplatform, Apple Pay, and AI-assisted workflows. <em>I ship things that matter.</em></p>
-        <div class="hero-actions">
-          <a href="#experience" class="btn-red">View Work</a>
-          <a href="#contact" class="btn-outline">Get In Touch</a>
-        </div>
-        <div class="hero-contacts">
-          <a href="mailto:deryck_sunil@hotmail.com">deryck_sunil@hotmail.com</a>
-          <span>·</span>
-          <a href="https://linkedin.com/in/sunilgurung" target="_blank">LinkedIn</a>
-          <span>·</span>
-          <a href="https://github.com/sunilgurung" target="_blank">GitHub</a>
-          <span>·</span>
-          <span>+61 450 900 724</span>
-        </div>
-      </div>
-      <div class="hero-br">
-        <div class="stat-row"><div class="stat-n">7</div><div class="stat-l">Years iOS Dev</div></div>
-        <div class="stat-row"><div class="stat-n">4×</div><div class="stat-l">Promoted at Prezzee</div></div>
-        <div class="stat-row"><div class="stat-n">60%</div><div class="stat-l">Less duplicate code (KMP)</div></div>
-        <div class="stat-row"><div class="stat-n">45s</div><div class="stat-l">Build time (was 3+ min)</div></div>
-        <div class="stat-row"><div class="stat-n">75%+</div><div class="stat-l">Test coverage</div></div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="s-head reveal"><span class="s-num">01</span><h2 class="s-title">About</h2></div>
-    <div class="s-wrap">
+    <div class="work-details">
+      <div class="wd-block">
+        <h3 class="wd-head">Platform &amp; Impact</h3>
+        <ul>
+          <li>Rebuilt Android in Jetpack Compose — Android users saw <strong>45% fewer UI bugs</strong></li>
+          <li>Restructured iOS into SPM modules — build times dropped <strong>3+ min → 45s</strong>, so users got fixes faster</li>
+          <li>Set up Bitrise &amp; Fastlane for <strong>zero-touch weekly releases</strong> — updates every week, not months</li>
+          <li>Grew test coverage to <strong>75%+</strong> — fewer crashes, more reliable experiences</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIOUS -->
+<section class="section" id="prev">
+  <div class="section-inner">
+    <span class="section-tag">Previous</span>
+    <h2 class="section-title">Impact IT</h2>
+    <div class="work-role">iOS Engineer · 2017 – 2018 · Kathmandu</div>
+    <p class="work-summary">Built three full client iOS apps from scratch — social, personal finance, and event coordination. Owned each product end-to-end from architecture to App Store submission.</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section alt" id="projects">
+  <div class="section-inner">
+    <span class="section-tag">Published</span>
+    <h2 class="section-title">CitizenMate</h2>
+    <div class="work-role">Solo Developer · 2025</div>
+    <p class="work-summary">395 practice questions based on the official Australian Citizenship Test. Fully offline, no ads, no tracking, no sign-up. Available on iPhone, iPad, Mac, and Apple Vision Pro.</p>
+    <div class="project-metrics">
+      <span class="pm-item"><strong>395</strong> Questions</span>
+      <span class="pm-item"><strong>4</strong> Platforms</span>
+      <span class="pm-item"><strong>100%</strong> Offline</span>
+      <span class="pm-item"><strong>0</strong> Ads or Tracking</span>
+    </div>
+    <a href="https://apps.apple.com/gb/app/citizenmate/id6761265114" target="_blank" class="btn-primary">View on App Store</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <span class="section-tag">About</span>
+    <div class="about-grid">
       <div>
-        <div class="about-lede reveal">I joined Prezzee as a two-week iOS intern in October 2019. Six years later I'm a Senior Mobile Engineer, promoted four times, who has run the mobile team as Acting Tech Lead and shipped features most engineers never get near.</div>
-        <p class="about-body reveal">At Prezzee I've owned iOS across every major product area — gifting, wallet management, promotions, and checkout. When the platform needed Android coverage, I picked it up. When cross-platform inconsistencies were causing bugs, I introduced <strong>Kotlin Multiplatform</strong> and cut duplicate code by 60%.</p>
-        <div class="pull-quote reveal"><p>"I think carefully about where AI genuinely improves how engineers build — not just where it looks impressive."</p></div>
-        <p class="about-body reveal">I led the delivery of <strong>Apple Pay with full banking card provisioning</strong> — a first for Prezzee. I drove iOS through three architectural generations, rebuilt Android in Jetpack Compose, and restructured the codebase into SPM modules cutting build times from 3+ minutes to 45 seconds.</p>
-        <p class="about-body reveal">Before Prezzee, I shipped three client iOS apps from scratch at Impact IT in Kathmandu — straight out of my BSc.</p>
+        <h2 class="about-heading">I build mobile<br/>experiences that<br/><em>people rely on.</em></h2>
+        <p class="about-body">Every architecture decision I've made traces back to a user problem. Android users were getting inconsistent experiences — so I rebuilt it in Jetpack Compose. Builds took too long to ship fixes — so I dropped them from 3+ minutes to 45 seconds. Users wanted Apple Wallet support — so I led Apple Pay end-to-end.</p>
+        <p class="about-body">I introduced <strong>Kotlin Multiplatform</strong> because the same feature behaved differently on iOS vs Android. After KMP, users get the same reliable experience regardless of their phone.</p>
+        <p class="about-body">Before all of this I built three client apps from scratch at Impact IT — and in 2025 I published <strong>CitizenMate</strong> as a solo developer: no ads, no tracking, just a tool that helps people pass their citizenship test.</p>
       </div>
-      <div class="hcards">
-        <div class="hc reveal"><div class="hc-icon">📱</div><div class="hc-t">Apple Pay &amp; Wallet</div><div class="hc-d">First for Prezzee. Full PassKit — encrypted card data, certificate chains, OTP flows, Apple production certification.</div></div>
-        <div class="hc reveal"><div class="hc-icon">🏗️</div><div class="hc-t">Architecture Ownership</div><div class="hc-d">MVC → MVVM + Coordinator → MVI + Coordinator. Migration guides and team workshops authored.</div></div>
-        <div class="hc reveal"><div class="hc-icon">🔗</div><div class="hc-t">Kotlin Multiplatform</div><div class="hc-d">Introduced KMP at Prezzee. 60% less duplicate code across iOS &amp; Android.</div></div>
-        <div class="hc reveal"><div class="hc-icon">👥</div><div class="hc-t">Acting Tech Lead</div><div class="hc-d">Team of four. Sprint ceremonies, architecture decisions, two engineers later promoted.</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="s-head reveal"><span class="s-num">02</span><h2 class="s-title">Skills</h2></div>
-    <div class="skills-grid">
-      <div class="sk reveal">
-        <div class="sk-cat">iOS — 7 yrs</div>
-        <div class="sk-tags"><span class="tag hi">Swift</span><span class="tag hi">SwiftUI</span><span class="tag">UIKit</span><span class="tag">Combine</span><span class="tag">PassKit</span><span class="tag">Apple Pay</span><span class="tag">SPM</span><span class="tag">XCTest</span><span class="tag">Core Data</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">Android</div>
-        <div class="sk-tags"><span class="tag hi">Kotlin</span><span class="tag hi">Jetpack Compose</span><span class="tag">ViewModel</span><span class="tag">Coroutines</span><span class="tag">Room</span><span class="tag">JUnit</span><span class="tag">Espresso</span><span class="tag">Retrofit</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">Architecture</div>
-        <div class="sk-tags"><span class="tag hi">MVI + Coordinator</span><span class="tag">MVVM</span><span class="tag">Clean Architecture</span><span class="tag">Modular SPM</span><span class="tag">MVC</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">Cross-Platform</div>
-        <div class="sk-tags"><span class="tag hi">KMP</span><span class="tag">Shared Business Logic</span><span class="tag">Shared Networking</span><span class="tag">Shared Design System</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">CI / CD</div>
-        <div class="sk-tags"><span class="tag">Bitrise</span><span class="tag">Fastlane</span><span class="tag">TestFlight</span><span class="tag">Firebase</span><span class="tag">GitHub Actions</span><span class="tag">Git</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">Leadership</div>
-        <div class="sk-tags"><span class="tag hi">Acting Tech Lead</span><span class="tag">Agile / Scrum</span><span class="tag">Mentoring</span><span class="tag">Architecture Reviews</span><span class="tag">Sprint Ceremonies</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">Integrations</div>
-        <div class="sk-tags"><span class="tag">Apple Pay</span><span class="tag">Banking APIs</span><span class="tag">REST</span><span class="tag">Firebase</span><span class="tag">Postman</span><span class="tag">MapKit</span></div>
-      </div>
-      <div class="sk reveal">
-        <div class="sk-cat">AI Tooling</div>
-        <div class="sk-tags"><span class="tag hi">GitHub Copilot</span><span class="tag hi">Claude</span><span class="tag">ChatGPT</span><span class="tag">Prompt Engineering</span><span class="tag">Agentic Coding</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ARCHITECTURE -->
-  <section id="architecture">
-    <div class="s-head reveal"><span class="s-num">03</span><h2 class="s-title">Architecture</h2></div>
-    <div class="s-wrap">
-      <div class="arch-intro reveal">
-        <div class="arch-intro-text">
-          <p>I've driven iOS through <strong>three full architectural generations</strong> at Prezzee — not as academic exercises, but as direct responses to real scaling pain. Each migration was proposed, designed, documented, and rolled out under my ownership. I wrote the migration guides, ran workshop sessions, and paired through the first features to make each pattern stick across the team.</p>
+      <div class="about-side">
+        <div class="as-card">
+          <span class="as-emoji">🎵</span>
+          <div class="as-title">Currently Vibing</div>
+          <div class="as-desc">Lofi beats, ambient, and anything with a solid groove. Keeps the flow going.</div>
         </div>
-        <div class="arch-quote">
-          <p>"Architecture should solve the problems you actually have — not the ones that look good on a whiteboard."</p>
-          <cite>— My approach at every migration decision</cite>
-        </div>
-      </div>
-      <div class="arch-flow reveal">
-        <div class="arch-card">
-          <div class="arch-gen">Generation 01</div>
-          <div class="arch-name">MVC</div>
-          <div class="arch-era">2019 — 2020</div>
-          <div class="arch-desc">The inherited codebase. ViewControllers owning everything — networking, state, navigation, UI. <strong>Worked fine at small scale</strong> but testing was painful and onboarding slow.</div>
-          <div class="arch-details">
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Massive ViewControllers (1000+ lines)</div></div>
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Tight coupling between UI and business logic</div></div>
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Unit testing nearly impossible</div></div>
-          </div>
-          <div class="arch-why">Why move on?</div>
-          <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Codebase growing, team growing — couldn't scale</div></div>
-        </div>
-        <div class="arch-arrow"><div class="arch-arrow-icon">→</div></div>
-        <div class="arch-card">
-          <div class="arch-gen">Generation 02</div>
-          <div class="arch-name">MVVM + Coordinator</div>
-          <div class="arch-era">2021 — 2023</div>
-          <div class="arch-desc">Separated concerns properly. ViewModels handled logic, Coordinators owned navigation. <strong>Testability improved dramatically</strong> and new engineers ramped up faster.</div>
-          <div class="arch-details">
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Combine-powered reactive bindings</div></div>
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Coordinator pattern for decoupled navigation</div></div>
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">ViewModels fully unit-testable</div></div>
-          </div>
-          <div class="arch-why">Why move on?</div>
-          <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">State complexity caused subtle, hard-to-reproduce bugs</div></div>
-        </div>
-        <div class="arch-arrow"><div class="arch-arrow-icon">→</div></div>
-        <div class="arch-card arch-current">
-          <div class="arch-gen">Generation 03 · Current</div>
-          <div class="arch-name">MVI + Coordinator</div>
-          <div class="arch-era">2024 — Present</div>
-          <div class="arch-desc">Unidirectional data flow. Intent → State → Reducer loop makes <strong>side effects predictable</strong>, screen state trivial to test, and onboarding new engineers even faster.</div>
-          <div class="arch-details">
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Single source of truth for screen state</div></div>
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Predictable side-effect handling</div></div>
-            <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Easier debugging — state is always reproducible</div></div>
-          </div>
-          <div class="arch-why">Result</div>
-          <div class="arch-detail"><div class="arch-detail-dot"></div><div class="arch-detail-txt">Fewer state-related bugs, faster feature delivery</div></div>
-        </div>
-      </div>
-      <div class="arch-bottom reveal">
-        <div class="arch-stat">
-          <div class="arch-stat-n">3</div>
-          <div class="arch-stat-l">Architecture Generations Led</div>
-        </div>
-        <div class="arch-stat">
-          <div class="arch-stat-n">75%+</div>
-          <div class="arch-stat-l">Test Coverage Achieved</div>
-        </div>
-        <div class="arch-stat">
-          <div class="arch-stat-n">45s</div>
-          <div class="arch-stat-l">Build Time (was 3+ min)</div>
+        <div class="as-card">
+          <span class="as-emoji">🧠</span>
+          <div class="as-title">AI Workflow</div>
+          <div class="as-desc">Copilot + Claude + ChatGPT integrated into daily engineering. I think critically about where AI genuinely helps.</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- AI -->
-  <section id="ai">
-    <div class="s-head reveal"><span class="s-num">04</span><h2 class="s-title">AI &amp; Learning</h2></div>
-    <div class="s-wrap">
+<!-- SKILLS -->
+<section class="section alt" id="skills">
+  <div class="section-inner">
+    <span class="section-tag">Skills</span>
+    <div class="skills-blocks">
+      <div class="sb"><span class="sb-cat">iOS</span><span class="sb-items">Swift, SwiftUI, UIKit, Combine, PassKit, Apple Pay, SPM, XCTest, Core Data</span></div>
+      <div class="sb"><span class="sb-cat">Android</span><span class="sb-items">Kotlin, Jetpack Compose, ViewModel, Coroutines, Room, Retrofit, Espresso</span></div>
+      <div class="sb"><span class="sb-cat">Architecture</span><span class="sb-items">MVI + Coordinator, MVVM, Clean Architecture, Modular SPM</span></div>
+      <div class="sb"><span class="sb-cat">Cross-Platform</span><span class="sb-items">KMP, Shared Business Logic, Shared Networking, Shared Design System</span></div>
+      <div class="sb"><span class="sb-cat">CI/CD</span><span class="sb-items">Bitrise, Fastlane, TestFlight, Firebase, GitHub Actions</span></div>
+      <div class="sb"><span class="sb-cat">Leadership</span><span class="sb-items">Acting Tech Lead, Agile/Scrum, Mentoring, Architecture Reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <span class="section-tag">Contact</span>
+    <div class="contact-grid">
       <div>
-        <div class="badge-row reveal"><span class="badge">Active</span><span class="badge-sub">Integrated into daily engineering workflow</span></div>
-        <h3 class="ai-head reveal">Using AI <em>seriously</em> —<br/>not just autocomplete.</h3>
-        <p class="ai-body reveal">AI-assisted development is woven into how I work every day. I use these tools to <strong>accelerate code review</strong>, prototype architecture faster, generate test scaffolding, and explore solutions that would take far longer manually. I think critically about where AI <strong>genuinely improves</strong> engineering — and where it adds noise.</p>
-        <div class="learning-box reveal">
-          <div class="lb-title">Currently Exploring</div>
-          <div class="pills">
-            <span class="pill">AI in mobile dev workflows</span>
-            <span class="pill">Prompt engineering for Swift</span>
-            <span class="pill">On-device ML / CoreML</span>
-            <span class="pill">LLM integration patterns</span>
-            <span class="pill">AI-assisted test generation</span>
-            <span class="pill">Agentic coding tools</span>
-          </div>
+        <h2 class="contact-heading">Open to <em>great</em> work.</h2>
+        <p class="contact-body">Available for senior iOS, mobile lead, and cross-platform roles in Sydney and remotely.</p>
+        <div class="contact-links">
+          <a href="mailto:deryck_sunil@hotmail.com" class="cl">✉️ <span>deryck_sunil@hotmail.com</span></a>
+          <a href="https://linkedin.com/in/sunilgurung" target="_blank" class="cl">💼 <span>linkedin.com/in/sunilgurung</span></a>
+          <a href="https://github.com/sunilgurung" target="_blank" class="cl">⌨️ <span>github.com/sunilgurung</span></a>
         </div>
       </div>
-      <div class="ai-tools reveal">
-        <div class="ai-row"><span class="ai-rn">01</span><span class="ai-rico">🤖</span><div><div class="ai-rname">GitHub Copilot</div><div class="ai-ruse">Daily inline code assistance · Swift &amp; Kotlin</div></div><span class="ai-arrow">↗</span></div>
-        <div class="ai-row"><span class="ai-rn">02</span><span class="ai-rico">🧠</span><div><div class="ai-rname">Claude</div><div class="ai-ruse">Architecture reasoning · complex problem solving</div></div><span class="ai-arrow">↗</span></div>
-        <div class="ai-row"><span class="ai-rn">03</span><span class="ai-rico">💬</span><div><div class="ai-rname">ChatGPT</div><div class="ai-ruse">Research · documentation · debugging</div></div><span class="ai-arrow">↗</span></div>
-        <div class="ai-row"><span class="ai-rn">04</span><span class="ai-rico">✍️</span><div><div class="ai-rname">Prompt Engineering</div><div class="ai-ruse">Optimised workflows for mobile dev contexts</div></div><span class="ai-arrow">↗</span></div>
+      <div class="cta-card">
+        <div class="cta-sub">Available Now</div>
+        <p class="cta-body">Looking for someone who owns mobile end-to-end? Let's talk.</p>
+        <a href="mailto:deryck_sunil@hotmail.com" class="btn-primary">Send a Message</a>
       </div>
     </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="s-head reveal"><span class="s-num">05</span><h2 class="s-title">Experience</h2></div>
-    <div class="timeline">
-
-      <!-- PREZZEE -->
-      <div class="job reveal">
-        <div class="job-dot"></div>
-        <div>
-          <div class="job-period">Dec 2019 – Present · Sydney, AU</div>
-          <div class="job-title">Senior Mobile Engineer</div>
-          <div class="job-company"><strong>Prezzee</strong> · Australia's largest digital gift card marketplace · UK &amp; US stakeholder collaboration</div>
-          <div class="promo-row">
-            <span class="promo now">Senior · Dec 2024 →</span>
-            <span class="promo">Mid-Level · Aug 2021</span>
-            <span class="promo">Associate iOS · Dec 2019</span>
-            <span class="promo">Intern · Oct 2019</span>
-          </div>
-        </div>
-        <div class="areas">
-          <div>
-            <div class="area-head">Apple Pay &amp; Banking Integration</div>
-            <div class="blist">
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Led end-to-end delivery of Apple Pay Wallet provisioning — <strong>a first for Prezzee</strong> — letting users add digital gift cards directly to iPhone Wallet.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Implemented full PassKit layer (PKAddPaymentPassViewController) handling encrypted card data, certificate chains, and OTP flows to Apple's banking-grade requirements.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Coordinated with external card-scheme and banking partners — API contracts, sandbox testing, and Apple's production certification process.</span></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="area-head">Platform &amp; Cross-Platform</div>
-            <div class="blist">
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Introduced <strong>Kotlin Multiplatform</strong> — shared validation logic, data models, and networking between iOS and Android. Cut duplicate code by <span class="m">~60%</span>.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Rebuilt Android in Jetpack Compose — reduced UI-related bug reports by <span class="m">45%</span> in the quarter after launch.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Restructured iOS into SPM modules — incremental build times from <span class="m">3+ min → 45s</span>, a meaningful daily win for the whole team.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Set up Bitrise &amp; Fastlane pipelines for zero-touch weekly releases to TestFlight, Firebase, and both app stores.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Grew test coverage to <span class="m">75%+</span> across iOS and Android. Crash-free rate improved meaningfully in months following.</span></div>
-            </div>
-          </div>
-          <div>
-            <div class="area-head">Acting Tech Lead</div>
-            <div class="blist">
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Led a team of four — ran sprint ceremonies, unblocked engineers, owned architecture decisions without dropping my own engineering output.</span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Mentored junior and mid-level engineers through design reviews and pair programming. <strong>Two have since been promoted.</strong></span></div>
-              <div class="bl"><span class="bl-d">—</span><span class="bl-t">Bridge between engineering and product — translating roadmap priorities into technical plans and pushing back where timelines weren't realistic.</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DIVIDER -->
-      <div class="exp-divider reveal">
-        <span class="divider-label">Previous Experience</span>
-        <div style="flex:1;height:1px;background:var(--rule);"></div>
-      </div>
-
-      <!-- IMPACT IT -->
-      <div class="job reveal">
-        <div class="job-dot past"></div>
-        <div>
-          <div class="job-period">Apr 2017 – Feb 2018 · Kathmandu, Nepal</div>
-          <div class="job-title">iOS Engineer</div>
-          <div class="job-company"><strong>Impact IT Pvt. Ltd.</strong></div>
-        </div>
-        <p class="job-desc">Straight out of my BSc, I built <strong>three full client iOS apps from scratch</strong> — social, personal finance, and event coordination. Ran code reviews, iterated directly with clients, and presented at sign-off milestones. This is where I learned to own a product end-to-end.</p>
-        <div class="app-cards">
-          <div class="acard">
-            <div class="acard-num">01</div>
-            <div class="acard-cat">Social Platform</div>
-            <div class="acard-name">Kakaaki</div>
-            <div class="acard-desc">Social networking app — profiles, feeds, real-time interactions, and media sharing. Delivered end-to-end as solo iOS engineer.</div>
-            <div class="acard-tags"><span class="acard-tag">Swift</span><span class="acard-tag">UIKit</span><span class="acard-tag">REST</span><span class="acard-tag">Firebase</span></div>
-            <div class="acard-blist">
-              <div class="acard-b"><div class="acard-dot"></div><div class="acard-bt">Architecture to App Store submission, fully owned</div></div>
-              <div class="acard-b"><div class="acard-dot"></div><div class="acard-bt">Iterated on UX directly with client across multiple rounds</div></div>
-            </div>
-          </div>
-          <div class="acard">
-            <div class="acard-num">02</div>
-            <div class="acard-cat">Personal Finance</div>
-            <div class="acard-name">KharchaKitab</div>
-            <div class="acard-desc">Finance tracking app — expense logging, budget categories, visualisations. "Kharcha" = expense, "Kitab" = book in Nepali.</div>
-            <div class="acard-tags"><span class="acard-tag">Swift</span><span class="acard-tag">Core Data</span><span class="acard-tag">Charts</span><span class="acard-tag">UIKit</span></div>
-            <div class="acard-blist">
-              <div class="acard-b"><div class="acard-dot"></div><div class="acard-bt">Local-first Core Data for offline reliability</div></div>
-              <div class="acard-b"><div class="acard-dot"></div><div class="acard-bt">Custom charts and budget summary visualisations</div></div>
-            </div>
-          </div>
-          <div class="acard">
-            <div class="acard-num">03</div>
-            <div class="acard-cat">Event Coordination</div>
-            <div class="acard-name">Third Wheel</div>
-            <div class="acard-desc">Event coordination app — social scheduling, group invites, and real-time updates for coordinating social outings.</div>
-            <div class="acard-tags"><span class="acard-tag">Swift</span><span class="acard-tag">MapKit</span><span class="acard-tag">Push Notifs</span><span class="acard-tag">UIKit</span></div>
-            <div class="acard-blist">
-              <div class="acard-b"><div class="acard-dot"></div><div class="acard-bt">MapKit integration for event location discovery</div></div>
-              <div class="acard-b"><div class="acard-dot"></div><div class="acard-bt">Push notifications for reminders and group invites</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="s-head reveal"><span class="s-num">06</span><h2 class="s-title">Open Source</h2></div>
-    <div class="s-wrap">
-      <div class="os-card reveal">
-        <a href="https://github.com/sunilgurung" target="_blank" class="os-link">↗</a>
-        <div class="os-type">SwiftUI · Open Source</div>
-        <div class="os-name">Text with Multiple Links</div>
-        <div class="os-desc">SwiftUI view rendering inline rich text with multiple independently tappable links — custom layout, gesture disambiguation, and full VoiceOver support.</div>
-        <div class="os-tech"><span>SwiftUI</span><span>Accessibility</span><span>Gestures</span><span>VoiceOver</span></div>
-      </div>
-      <div class="os-card reveal">
-        <a href="https://github.com/sunilgurung" target="_blank" class="os-link">↗</a>
-        <div class="os-type">SwiftUI · Open Source</div>
-        <div class="os-name">Onboarding View</div>
-        <div class="os-desc">Reusable onboarding component with page transitions, skip logic, and dark mode support. Drop-in integration with zero dependencies.</div>
-        <div class="os-tech"><span>SwiftUI</span><span>Dark Mode</span><span>Reusable Component</span><span>Zero Deps</span></div>
-      </div>
-      <div class="os-card reveal">
-        <a href="https://github.com/sunilgurung" target="_blank" class="os-link">↗</a>
-        <div class="os-type">Personal · MVI Testbed</div>
-        <div class="os-name">Reelchoice</div>
-        <div class="os-desc">Movie recommendation app with offline-first caching and TMDB integration. Built to test MVI patterns in production-like conditions before rolling out at Prezzee.</div>
-        <div class="os-tech"><span>SwiftUI</span><span>Combine</span><span>TMDB API</span><span>MVI</span><span>Offline-first</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="s-head reveal"><span class="s-num">07</span><h2 class="s-title">Education</h2></div>
-    <div class="s-wrap">
-      <div class="edu-card reveal">
-        <div class="edu-yr">2018 – 2019</div>
-        <div class="edu-deg">Master of Information Technology — Mobile Application Development</div>
-        <div class="edu-school">Central Queensland University · Sydney, Australia</div>
-        <div class="edu-hon">High Distinction</div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-yr">2014 – 2017</div>
-        <div class="edu-deg">Bachelor of Science (Hons) in Computing</div>
-        <div class="edu-school">The British College / ISMT College · Kathmandu, Nepal<br/>Affiliated with Leeds Beckett University, UK</div>
-        <div class="edu-hon">First Class Honours</div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-yr">2021</div>
-        <div class="edu-deg">Nanodegree — Android Kotlin Developer</div>
-        <div class="edu-school">Udacity · Kotlin · Coroutines · Jetpack Compose · Retrofit · Room</div>
-        <div class="edu-hon">Continuing Education</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="s-head reveal"><span class="s-num">08</span><h2 class="s-title">Contact</h2></div>
-    <div class="s-wrap">
-      <div>
-        <h2 class="contact-h reveal">Open to<br/><em>great</em><br/>work.</h2>
-        <p class="contact-sub reveal">Available for senior iOS, mobile lead, and cross-platform roles in Sydney and remotely. If you're building something that matters and need someone who owns complex mobile systems end-to-end — let's talk.</p>
-        <div class="clinks reveal">
-          <a href="mailto:deryck_sunil@hotmail.com" class="clink"><span class="cico">✉️</span><div><div class="clbl">Email</div><div class="cval">deryck_sunil@hotmail.com</div></div></a>
-          <a href="https://linkedin.com/in/sunilgurung" target="_blank" class="clink"><span class="cico">💼</span><div><div class="clbl">LinkedIn</div><div class="cval">linkedin.com/in/sunilgurung</div></div></a>
-
-          <a href="https://github.com/sunilgurung" target="_blank" class="clink"><span class="cico">⌨️</span><div><div class="clbl">GitHub</div><div class="cval">github.com/sunilgurung</div></div></a>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="contact-card">
-          <div class="cc-sub">Currently available</div>
-          <p class="cc-body">Looking for a senior mobile engineer who can own iOS end-to-end, step into lead responsibilities, and bring <strong>genuine cross-platform depth</strong> with Android and KMP? Let's talk.</p>
-          <a href="mailto:deryck_sunil@hotmail.com" class="cc-cta">Send a message →</a>
-        </div>
-        <div class="contact-foot">
-          <span class="dot-green"></span>
-          <span class="contact-foot-txt">Available for hire · Sydney, NSW, Australia</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 </main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Sunil Gurung</span>
+    <span class="footer-tag">Rhythmic Mobile Craft</span>
+    <span>Sydney, Australia</span>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
