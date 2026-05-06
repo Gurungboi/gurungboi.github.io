@@ -6,11 +6,11 @@
 <title>Sunil Gurung — Senior iOS Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
 <meta name="description" content="Sunil Gurung — Senior Mobile Engineer shipping iOS, Android, KMP, and Apple Pay at scale."/>
 <meta name="author" content="Sunil Gurung"/>
-<meta name="theme-color" content="#FAF6F1"/>
+<meta name="theme-color" content="#0B0B0F"/>
 <meta property="og:title" content="Sunil Gurung — Senior iOS Engineer"/>
 <meta property="og:description" content="7 years shipping iOS, Android, KMP, and Apple Pay at scale."/>
 <meta property="og:image" content="Images/logo.png"/>
@@ -22,6 +22,14 @@
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 </head>
 <body>
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Floating Geometric Shapes -->
+<div class="geo-shape geo-triangle"></div>
+<div class="geo-shape geo-circle"></div>
+<div class="geo-shape geo-square"></div>
+
 <!-- Skip Link for Accessibility -->
 <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -29,13 +37,18 @@
 <nav class="nav">
   <div class="nav-inner">
     <span class="nav-brand">Sunil <em>G.</em></span>
+    <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <div class="nav-links">
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
-    <span class="nav-status">● Available</span>
+    <span class="nav-status">Available</span>
   </div>
 </nav>
 
@@ -46,16 +59,28 @@
   <div class="hero-inner">
     <span class="hero-kicker">Senior Mobile Engineer</span>
     <h1 class="hero-title">Sunil<br/>Gurung.</h1>
-    <p class="hero-sub">7 years shipping products used by millions. iOS, Android, Kotlin Multiplatform, Apple Pay — I build mobile experiences people rely on every day.</p>
+    <p class="hero-sub">I build mobile experiences that scale. 7 years turning complex problems into elegant, production-ready features — from intern to senior, from solo features to leading teams.</p>
     <div class="hero-actions">
-      <a href="#work" class="btn-primary">View Work</a>
-      <a href="#contact" class="btn-outline">Get In Touch</a>
+      <a href="#work" class="btn-primary"><span>View Work</span></a>
+      <a href="#contact" class="btn-outline">Let's Talk</a>
     </div>
     <div class="hero-metrics">
-      <div class="hm-item"><span class="hm-num">7</span><span class="hm-label">Years</span></div>
-      <div class="hm-item"><span class="hm-num">4×</span><span class="hm-label">Promoted</span></div>
-      <div class="hm-item"><span class="hm-num">~60%</span><span class="hm-label">Less Duplicate Code</span></div>
-      <div class="hm-item"><span class="hm-num">45s</span><span class="hm-label">Build Time</span></div>
+      <div class="hm-item">
+        <span class="hm-num"><span class="count-up" data-target="7">0</span><span class="accent">+</span></span>
+        <span class="hm-label">Years Building</span>
+      </div>
+      <div class="hm-item">
+        <span class="hm-num"><span class="highlight">4</span><span class="accent">×</span></span>
+        <span class="hm-label">Promotions</span>
+      </div>
+      <div class="hm-item">
+        <span class="hm-num"><span class="count-up" data-target="60">0</span><span class="accent">%</span></span>
+        <span class="hm-label">Less Duplicate Code</span>
+      </div>
+      <div class="hm-item">
+        <span class="hm-num"><span class="count-up" data-target="45">0</span><span class="accent">s</span></span>
+        <span class="hm-label">Build Time</span>
+      </div>
     </div>
   </div>
 </section>
@@ -65,46 +90,74 @@
   <div class="section-inner">
     <span class="section-tag">Experience</span>
     <h2 class="section-title">Prezzee</h2>
-    <div class="work-role">Senior Mobile Engineer · 2019 – Present · Sydney</div>
-    <p class="work-summary">Joined as a two-week iOS intern. Promoted four times. Led Apple Pay integration used by millions, rebuilt cross-platform experiences, and ran the mobile team as Acting Tech Lead.</p>
+    <div class="work-role">Senior Mobile Engineer <span class="highlight">·</span> 2019 – Present <span class="highlight">·</span> Sydney, Australia</div>
+    <p class="work-summary">Started as a two-week iOS intern. Four promotions later, I led the Apple Pay integration used by millions, drove Kotlin Multiplatform adoption across teams, and ran the mobile team as Acting Tech Lead.</p>
     <div class="work-promos">
-      <span class="promo active">Senior · 2024 →</span>
-      <span class="promo">Mid · 2021</span>
+      <span class="promo active">Senior · 2024</span>
+      <span class="promo">Mid-Level · 2021</span>
       <span class="promo">Associate · 2019</span>
       <span class="promo">Intern · 2019</span>
     </div>
 
     <div class="work-cards">
       <div class="wc">
-        <span class="wc-icon">📱</span>
-        <div class="wc-title">Apple Pay &amp; Wallet</div>
-        <div class="wc-desc">Led end-to-end Apple Pay integration — millions of users can now add gift cards to Apple Wallet. Banking-grade security: encrypted data, certificate chains, OTP flows, Apple certification.</div>
+        <span class="wc-icon">💳</span>
+        <div class="wc-title">Apple Pay & Wallet</div>
+        <div class="wc-desc">Led end-to-end Apple Pay integration for millions of users. Gift cards in Apple Wallet with banking-grade security — encrypted data, certificate chains, OTP flows, and Apple certification.</div>
       </div>
       <div class="wc">
         <span class="wc-icon">🔗</span>
         <div class="wc-title">Kotlin Multiplatform</div>
-        <div class="wc-desc">Introduced KMP so iOS and Android users get identical experiences. Cut duplicate code by 60% — fewer inconsistencies, faster delivery for everyone.</div>
+        <div class="wc-desc">Introduced KMP so iOS and Android users get identical experiences. Reduced duplicate code by 60% — fewer inconsistencies, faster delivery, happier users.</div>
       </div>
-      <div class="wc">
+      <div class="wc wc-wide">
         <span class="wc-icon">🏗️</span>
         <div class="wc-title">Architecture</div>
-        <div class="wc-desc">Three architectural migrations (MVC → MVVM → MVI). Each one directly improved app stability and feature delivery speed for end users.</div>
+        <div class="wc-desc">Three architectural migrations in three years. Each improved stability and cut time-to-ship.</div>
+        <div class="arch-timeline">
+          <div class="at-step">
+            <span class="at-label">2019</span>
+            <span class="at-name">MVC</span>
+            <span class="at-note">Classic pattern</span>
+          </div>
+          <div class="at-arrow">›</div>
+          <div class="at-step">
+            <span class="at-label">2021</span>
+            <span class="at-name">MVVM</span>
+            <span class="at-note">Better testability</span>
+          </div>
+          <div class="at-arrow">›</div>
+          <div class="at-step at-step-current">
+            <span class="at-label">2023</span>
+            <span class="at-name">MVI</span>
+            <span class="at-note">Unidirectional flow</span>
+          </div>
+        </div>
       </div>
       <div class="wc">
         <span class="wc-icon">👥</span>
         <div class="wc-title">Tech Lead</div>
-        <div class="wc-desc">Led a team of four. Mentored engineers through design reviews — two promoted. Direct bridge between product goals and what the team built.</div>
+        <div class="wc-desc">Led a team of four engineers. Mentored through design reviews, ran architecture discussions. Two team members got promoted within a year.</div>
       </div>
     </div>
 
     <div class="work-details">
       <div class="wd-block">
-        <h3 class="wd-head">Platform &amp; Impact</h3>
+        <h3>Impact Metrics</h3>
         <ul>
-          <li>Rebuilt Android in Jetpack Compose — Android users saw <strong>45% fewer UI bugs</strong></li>
-          <li>Restructured iOS into SPM modules — build times dropped <strong>3+ min → 45s</strong>, so users got fixes faster</li>
-          <li>Set up Bitrise &amp; Fastlane for <strong>zero-touch weekly releases</strong> — updates every week, not months</li>
-          <li>Grew test coverage to <strong>75%+</strong> — fewer crashes, more reliable experiences</li>
+          <li><strong>45% fewer UI bugs</strong> — Rebuilt Android in Jetpack Compose</li>
+          <li><strong>Build time: 3+ min → 45s</strong> — Restructured iOS into SPM modules</li>
+          <li><strong>Weekly releases</strong> — Set up Bitrise & Fastlane CI/CD</li>
+          <li><strong>75%+ test coverage</strong> — Noticeably fewer production crashes</li>
+        </ul>
+      </div>
+      <div class="wd-block">
+        <h3>Key Learnings</h3>
+        <ul>
+          <li><strong>Scale changes everything</strong> — Architecture that works for 10K users breaks at 1M</li>
+          <li><strong>Duplication is debt</strong> — KMP cut 60% of shared code across platforms</li>
+          <li><strong>Velocity needs safety</strong> — Fast releases only work with test coverage</li>
+          <li><strong>Teams outlast projects</strong> — Mentoring and architecture reviews compound</li>
         </ul>
       </div>
     </div>
@@ -116,25 +169,37 @@
   <div class="section-inner">
     <span class="section-tag">Previous</span>
     <h2 class="section-title">Impact IT</h2>
-    <div class="work-role">iOS Engineer · 2017 – 2018 · Kathmandu</div>
-    <p class="work-summary">Built three full client iOS apps from scratch — social, personal finance, and event coordination. Owned each product end-to-end from architecture to App Store submission.</p>
+    <div class="work-role">iOS Engineer <span class="highlight">·</span> 2017 – 2018 <span class="highlight">·</span> Kathmandu, Nepal</div>
+    <p class="work-summary">Built three client iOS apps from scratch — a social app, a personal finance tracker, and an event coordination tool. Owned each from architecture decisions to App Store submission.</p>
+    <div class="work-cards">
+      <div class="wc">
+        <span class="wc-icon">📱</span>
+        <div class="wc-title">End-to-End Ownership</div>
+        <div class="wc-desc">Three full apps, three clients. Designed architecture, wrote code, handled App Store submissions, and supported launches — all before turning 23.</div>
+      </div>
+      <div class="wc">
+        <span class="wc-icon">🚀</span>
+        <div class="wc-title">Fast Learner</div>
+        <div class="wc-desc">Self-taught iOS development before formal engineering education. Landed my first professional role before graduation.</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section class="section alt" id="projects">
   <div class="section-inner">
-    <span class="section-tag">Published</span>
+    <span class="section-tag">Side Project</span>
     <h2 class="section-title">CitizenMate</h2>
-    <div class="work-role">Solo Developer · 2025</div>
-    <p class="work-summary">395 practice questions based on the official Australian Citizenship Test. Fully offline, no ads, no tracking, no sign-up. Available on iPhone, iPad, Mac, and Apple Vision Pro.</p>
+    <div class="work-role">Solo Developer <span class="highlight">·</span> 2025</div>
+    <p class="work-summary">395 practice questions for the official Australian Citizenship Test. Built it in my spare time — no ads, no tracking, just a tool that helps people pass their test.</p>
     <div class="project-metrics">
       <span class="pm-item"><strong>395</strong> Questions</span>
-      <span class="pm-item"><strong>4</strong> Platforms</span>
+      <span class="pm-item"><strong>1</strong> Platform</span>
       <span class="pm-item"><strong>100%</strong> Offline</span>
-      <span class="pm-item"><strong>0</strong> Ads or Tracking</span>
+      <span class="pm-item"><strong>Zero</strong> Ads</span>
     </div>
-    <a href="https://apps.apple.com/gb/app/citizenmate/id6761265114" target="_blank" rel="noopener noreferrer" class="btn-primary">View on App Store</a>
+    <a href="https://apps.apple.com/gb/app/citizenmate/id6761265114" target="_blank" rel="noopener noreferrer" class="btn-primary"><span>View on App Store →</span></a>
   </div>
 </section>
 
@@ -144,21 +209,22 @@
     <span class="section-tag">About</span>
     <div class="about-grid">
       <div>
-        <h2 class="about-heading">I build mobile<br/>experiences that<br/><em>people rely on.</em></h2>
-        <p class="about-body">Every architecture decision I've made traces back to a user problem. Android users were getting inconsistent experiences — so I rebuilt it in Jetpack Compose. Builds took too long to ship fixes — so I dropped them from 3+ minutes to 45 seconds. Users wanted Apple Wallet support — so I led Apple Pay end-to-end.</p>
-        <p class="about-body">I introduced <strong>Kotlin Multiplatform</strong> because the same feature behaved differently on iOS vs Android. After KMP, users get the same reliable experience regardless of their phone.</p>
-        <p class="about-body">Before all of this I built three client apps from scratch at Impact IT — and in 2025 I published <strong>CitizenMate</strong> as a solo developer: no ads, no tracking, just a tool that helps people pass their citizenship test.</p>
+        <h2 class="about-heading">I build things<br/>people <em>actually use.</em></h2>
+        <p class="about-body">I'm a mobile engineer who obsesses over the details. Not just "does it work?" — but "is this fast?", "is this consistent?", "would I want to use this myself?"</p>
+        <p class="about-body">At Prezzee, I led the Apple Pay integration for millions of users. I introduced Kotlin Multiplatform so iOS and Android users got the same reliable experience. I cut build times from 3+ minutes to 45 seconds so the team could ship faster without the wait.</p>
+        <p class="about-body">Before that, I built three client apps at Impact IT — social, finance, event apps — all before I'd even graduated. Now I run CitizenMate on the side, just because I wanted to build something genuinely useful that didn't exist.</p>
+        <p class="about-body">Based in Sydney. Open to senior iOS, mobile lead, and cross-platform roles.</p>
       </div>
       <div class="about-side">
         <div class="as-card">
-          <span class="as-emoji">🎵</span>
-          <div class="as-title">Currently Vibing</div>
-          <div class="as-desc">Lofi beats, ambient, and anything with a solid groove. Keeps the flow going.</div>
+          <span class="as-emoji">🎧</span>
+          <div class="as-title">When I'm Not Coding</div>
+          <div class="as-desc">Lofi beats and ambient while I work. Good beats = good code.</div>
         </div>
         <div class="as-card">
-          <span class="as-emoji">🧠</span>
-          <div class="as-title">AI Workflow</div>
-          <div class="as-desc">Copilot + Claude + ChatGPT integrated into daily engineering. I think critically about where AI genuinely helps.</div>
+          <span class="as-emoji">🤖</span>
+          <div class="as-title">AI Tools</div>
+          <div class="as-desc">Copilot, Claude, and ChatGPT in my daily workflow. I use them thoughtfully, not blindly.</div>
         </div>
       </div>
     </div>
@@ -169,13 +235,69 @@
 <section class="section alt" id="skills">
   <div class="section-inner">
     <span class="section-tag">Skills</span>
-    <div class="skills-blocks">
-      <div class="sb"><span class="sb-cat">iOS</span><span class="sb-items">Swift, SwiftUI, UIKit, Combine, PassKit, Apple Pay, SPM, XCTest, Core Data</span></div>
-      <div class="sb"><span class="sb-cat">Android</span><span class="sb-items">Kotlin, Jetpack Compose, ViewModel, Coroutines, Room, Retrofit, Espresso</span></div>
-      <div class="sb"><span class="sb-cat">Architecture</span><span class="sb-items">MVI + Coordinator, MVVM, Clean Architecture, Modular SPM</span></div>
-      <div class="sb"><span class="sb-cat">Cross-Platform</span><span class="sb-items">KMP, Shared Business Logic, Shared Networking, Shared Design System</span></div>
-      <div class="sb"><span class="sb-cat">CI/CD</span><span class="sb-items">Bitrise, Fastlane, TestFlight, Firebase, GitHub Actions</span></div>
-      <div class="sb"><span class="sb-cat">Leadership</span><span class="sb-items">Acting Tech Lead, Agile/Scrum, Mentoring, Architecture Reviews</span></div>
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="skills-container">
+      <div class="skill-group">
+        <h3 class="sg-title">iOS Development</h3>
+        <div class="skill-pills">
+          <span class="sp">Swift</span>
+          <span class="sp">SwiftUI</span>
+          <span class="sp">UIKit</span>
+          <span class="sp">Combine</span>
+          <span class="sp">PassKit</span>
+          <span class="sp">Apple Pay</span>
+          <span class="sp">SPM</span>
+          <span class="sp">XCTest</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="sg-title">Android Development</h3>
+        <div class="skill-pills">
+          <span class="sp">Kotlin</span>
+          <span class="sp">Jetpack Compose</span>
+          <span class="sp">ViewModel</span>
+          <span class="sp">Coroutines</span>
+          <span class="sp">Room</span>
+          <span class="sp">Retrofit</span>
+          <span class="sp">Espresso</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="sg-title">Cross-Platform</h3>
+        <div class="skill-pills">
+          <span class="sp">KMP</span>
+          <span class="sp">Shared Business Logic</span>
+          <span class="sp">Shared Networking</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="sg-title">Architecture</h3>
+        <div class="skill-pills">
+          <span class="sp">MVI</span>
+          <span class="sp">MVVM</span>
+          <span class="sp">Clean Architecture</span>
+          <span class="sp">Modular SPM</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="sg-title">CI/CD & Tools</h3>
+        <div class="skill-pills">
+          <span class="sp">Bitrise</span>
+          <span class="sp">Fastlane</span>
+          <span class="sp">TestFlight</span>
+          <span class="sp">Firebase</span>
+          <span class="sp">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="sg-title">Leadership</h3>
+        <div class="skill-pills">
+          <span class="sp">Acting Tech Lead</span>
+          <span class="sp">Agile/Scrum</span>
+          <span class="sp">Mentoring</span>
+          <span class="sp">Architecture Reviews</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -186,8 +308,8 @@
     <span class="section-tag">Contact</span>
     <div class="contact-grid">
       <div>
-        <h2 class="contact-heading">Open to <em>great</em> work.</h2>
-        <p class="contact-body">Available for senior iOS, mobile lead, and cross-platform roles in Sydney and remotely.</p>
+        <h2 class="contact-heading">Let's build<br/><em>something great.</em></h2>
+        <p class="contact-body">Open to senior iOS, mobile lead, and cross-platform roles in Sydney or remotely. Always happy to chat about mobile architecture, Kotlin Multiplatform, or anything tech.</p>
         <div class="contact-links">
           <a href="mailto:deryck_sunil@hotmail.com" class="cl">✉️ <span>deryck_sunil@hotmail.com</span></a>
           <a href="https://linkedin.com/in/sunilgurung" target="_blank" rel="noopener noreferrer" class="cl">💼 <span>linkedin.com/in/sunilgurung</span></a>
@@ -196,8 +318,8 @@
       </div>
       <div class="cta-card">
         <div class="cta-sub">Available Now</div>
-        <p class="cta-body">Looking for someone who owns mobile end-to-end? Let's talk.</p>
-        <a href="mailto:deryck_sunil@hotmail.com" class="btn-primary">Send a Message</a>
+        <p class="cta-body">Looking for someone who takes ownership end-to-end? From design to deployment. I'd love to hear from you.</p>
+        <a href="mailto:deryck_sunil@hotmail.com" class="btn-primary"><span>Send a Message</span></a>
       </div>
     </div>
   </div>
@@ -208,8 +330,8 @@
 <footer class="footer">
   <div class="footer-inner">
     <span>Sunil Gurung</span>
-    <span class="footer-tag">Rhythmic Mobile Craft</span>
-    <span>Sydney, Australia</span>
+    <span class="footer-tag">Sydney, Australia</span>
+    <span>© 2025</span>
   </div>
 </footer>
 
